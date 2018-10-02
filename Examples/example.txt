@@ -1,0 +1,17 @@
+even/odd
+fibonocci
+prime
+palindrome
+Array - ip address
+
+switch case on month names
+"""""      on fruit
+"""""" on bank
+
+
+/ promise /
+bi-cycle
+
+DOM
+    object representation of HTML code.
+    add,remove,replacing,creating HTML elements dynamically.
