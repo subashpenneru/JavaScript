@@ -33,17 +33,24 @@ function userDetails() {
     }
     var userName = prompt('enter your name');
     try {
-        if(userName == '') throw 'userName is empty'
+        if(userName == '') throw new Error('userName is empty');
         if(userName == undefined) throw 'userName is undefined'
         if(userName.length>10) throw 'userName limit exceeded'
         
     } catch (error) {
-        console.log(error);
+        if(error.name === 'ReferemceError'){
+            console.log(error);
+        }
+        else throw error;
     }
     finally {
         console.log('Name:-',userName);
         
     }
 }
-
-userDetails();
+try{
+    userDetails();
+}catch(error){
+    console.log(error);
+    
+}
