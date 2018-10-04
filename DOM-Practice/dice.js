@@ -37,7 +37,7 @@ function diceRoll(){
         input1.setAttribute('value',`${sum1}`)
         
         if(sum1>=35) h1.innerText = 'player1 winner'
-
+        
     }
     else {
         sum2 += value;
