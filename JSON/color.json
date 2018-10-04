@@ -1,0 +1,12 @@
+[{
+    "name": "jack Sparrow",
+    "age": 40,
+    "position": "captain",
+    "address": {
+        "ship": "Black Pearl",
+        "port": "Tortuga",
+        "location": "carribean"
+    },
+    "family": ["Hector Barbossa","Davy Jones","Black Beard","Armando Salzaar"]
+    
+}]
