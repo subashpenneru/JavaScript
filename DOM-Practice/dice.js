@@ -43,8 +43,9 @@ function diceRoll(){
         sum2 += value;
         input2.setAttribute('value',`${sum2}`)
 
-        if(sum1>=35) h1.innerText = 'player2 winner';
+        if(sum2>=35) h1.innerText = 'player2 winner';
     }
     turns++;
     document.body.appendChild(h1);
 }
+h1.style.color = 'red';
