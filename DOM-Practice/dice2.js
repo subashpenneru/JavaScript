@@ -1,7 +1,22 @@
 var value
-var img = document.querySelector('img');
-var input1 = document.querySelector('#p1');
-var input2 = document.querySelector('#p2');
+var section = document.createElement('section');
+var img = document.createElement('img');
+img.setAttribute('src','../DOM/images/tenor.gif');
+var div = document.createElement('div');
+
+var label1 = document.createElement('label');
+var label2 = document.createElement('label');
+label1.innerText = "player1:"
+label2.innerText = "player2:"
+var input1 = document.createElement('input');
+var input2 = document.createElement('input');
+
+var div1 = document.createElement('div');
+var btn = document.createElement('button');
+btn.innerText = "DICE";
+btn.setAttribute('type','button');
+btn.setAttribute('onclick','diceRoll()');
+
 var h1 = document.createElement('h1');
 var turns = 1;
 var total = 23;
@@ -54,7 +69,34 @@ function diceRoll(){
     turns++;
     document.body.appendChild(h1);
 }
+
+document.body.appendChild(section);
+section.appendChild(img);
+document.body.appendChild(div);
+div.appendChild(label1);
+div.appendChild(input1)
+
+div.appendChild(label2);
+div.appendChild(input2)
+
+document.body.appendChild(div1);
+div1.appendChild(btn);
+
 h1.style.color = 'red';
-document.body.style.backgroundColor = "lightblue"
-img.style.width = "150px"
-img.style.height = "150px"
+document.body.style.backgroundColor = "#42bff4"
+img.style.width = "250px"
+img.style.height = "250px"
+btn.style.width = "100px"
+btn.style.height = "50px"
+div1.style.marginTop = "25px"
+div1.style.textAlign = "center"
+
+section.style.textAlign = "center"
+section.style.marginBottom = "25px"
+
+input1.style.marginRight = "300px"
+
+input1.style.height = "25px"
+input2.style.height = "25px"
+label1.style.marginRight = "15px"
+label2.style.marginRight = "15px"
