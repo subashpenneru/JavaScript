@@ -22,6 +22,9 @@ var turns = 1;
 var total = 23;
 var sum1 =0,sum2=0;
 function diceRoll(){
+    if(sum1 == 23 || sum2 == 23){
+        window.location.reload();
+    }
     value = Math.floor(Math.random()*6)+1;
     
     switch (value) {

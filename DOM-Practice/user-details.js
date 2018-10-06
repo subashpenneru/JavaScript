@@ -3,26 +3,48 @@ var reg = ["Name","Email-Id","Age","Password"];
 var regInput = ["text","email","number","password"]
 var registerData = [];
 var h1 = document.createElement('h1');
+var x =1;
 
+/* To display Registration from */
 function register(){
-    registerDetails();
-    registerDetails();
-    registerDetails();
-    registerDetails();
-    var divi = document.getElementsByTagName('div')
+    if(x==1){
+        registerDetails();
+        registerDetails();
+        registerDetails();
+        registerDetails();
+        var divi = document.getElementsByTagName('div')
     
-    // var inputs = document.getElementsByClassName('inp');
-    for(i=0;i<divi.length;i++){
-        divi[i].style.margin = "25px 0px";
-    }
-    var inputs = document.getElementsByTagName('input');
-    for(i=0;i<inputs.length;i++){
-        inputs[i].style.float = "right"
-        inputs[i].style.marginRight = "400px"
+        // var inputs = document.getElementsByClassName('inp');
+        for(i=0;i<divi.length;i++){
+            divi[i].style.margin = "25px 0px";
+        }
+        var inputs = document.getElementsByTagName('input');
+        for(i=0;i<inputs.length;i++){
+            inputs[i].style.float = "right"
+            inputs[i].style.marginRight = "400px"
 
+        }
     }
-    
+    x++;
 }
+
+var btn1 = document.getElementById('btn1')
+btn1.addEventListener('click',function(){
+    var userData = document.getElementsByClassName('inp');
+    var error = {};
+    try {
+        if(userData[0].value == "") error.name = "Name must be filled out"
+        if(userData[1].value == "") error.email = "email-id must be filled out"
+        if(userData[2].value == "") error.age = "age must be filled out"
+        if(userData[3].value == "") error.password = "password must be filled out"
+        throw error; 
+    } catch (error) {
+        var data = JSON.stringify(error);
+        alert(data);
+        
+    }
+})
+
 
 var regCount = 0;
 var regc = 0;
