@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+</head>
+<body>
+    
+    <form action="">
+        <section>
+            <div id="fnamefield">
+                <label id="fnameL">First Name: </label>
+                <input type="text" id="fname" placeholder="Enter first Name">
+                <span id="spnfname"></span>
+            </div>
+            <div id="lnamefield">
+                <label id="lnameL">Last Name: </label>
+                <input type="text" id="lname" placeholder="Enter Last Name">
+                <span id="spnlname"></span>
+            </div>
+            <div id="emailfield">
+                <label id="emailL">Email-Id: </label>
+                <input type="email" id="emailid" placeholder="Enter your Email-Id">
+                <span id="spnemail"></span>
+            </div>
+            <div id="passwordfield">
+                <label id="passwordL">Password: </label>
+                <input type="Password" id="password" placeholder="Enter password">
+                <span id="spnpassword"></span>
+            </div>
+        </section>
+        <div id="btn1">
+            <button type="button" onclick="validation()">Register</button>
+        </div>
+
+    </form>
+    <script src="validate.js"></script>
+</body>
+</html>
