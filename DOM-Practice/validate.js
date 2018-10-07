@@ -17,7 +17,7 @@ function validation(){
         }
         else {
             for(i=0;i<firstName.length;i++){
-                if(isNaN(firstName[i])){user.fname = firstName; f++}
+                if(isNaN(firstName[i]) || firstName[i] == " "){user.fname = firstName; f++}
                 else throw "Numbers are not allowed"
             }
         }
@@ -36,7 +36,7 @@ function validation(){
         }
         else {
             for(i=0;i<lastName.length;i++){
-                if(isNaN(lastName[i])){user.lname = lastName;l++}
+                if(isNaN(lastName[i]) || lastName == " "){user.lname = lastName;l++}
                 else throw "Numbers are not allowed"
             }
         }
