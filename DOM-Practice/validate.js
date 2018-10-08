@@ -22,6 +22,7 @@ function validation(){
             }
         }
     } catch (error) {
+        document.getElementById('fname').style.borderColor = "red";
         var spnFirstName = document.getElementById('spnfname');
         spnFirstName.innerText = error;
     }
@@ -41,6 +42,7 @@ function validation(){
             }
         }
     } catch (error) {
+        document.getElementById('lname').style.borderColor = "red";
         var spnLastName = document.getElementById('spnlname');
         spnLastName.innerText = error;
     }
@@ -59,6 +61,7 @@ function validation(){
             else {user.emailid = email; e++}
         }
     } catch (error) {
+        document.getElementById('emailid').style.borderColor = "red";
         var spnLastName = document.getElementById('spnemail');
         spnLastName.innerText = error;
     }
@@ -81,6 +84,7 @@ function validation(){
             else {user.pwd = password; p++}
         }
     }catch(error){
+        document.getElementById('password').style.borderColor = "red"
         var spnPassword = document.getElementById('spnpassword');
         spnPassword.innerText = error;
     }
@@ -140,6 +144,7 @@ function validation(){
                     else {e++}
                 }
             } catch (error) {
+                document.getElementById('loginemailid').style.borderColor = "red"
                 var spnLastName = document.getElementById('spnloginemail');
                 spnLastName.innerText = error;
             }
@@ -162,6 +167,7 @@ function validation(){
                     else {p++}
                 }
             }catch(error){
+                document.getElementById('loginpassword').style.borderColor = "red";
                 var spnPassword = document.getElementById('spnloginpassword');
                 spnPassword.innerText = error;
             }
